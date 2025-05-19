@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Zeyroxdn</title>
     <style>
-        body {
-            background-color: #0e0e1a;
-            color: #e6e6fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* Fond violet avec image pleine page */
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
+        }
+        body {
+            background-color: #4b0082; /* violet foncé */
+            background-image: url('fond.png'); /* ton image de fond */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #e6e6fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
         }
         header {
-            background-color: #1a1a2e;
+            background-color: rgba(26, 26, 46, 0.8); /* fond semi-transparent */
             padding: 20px;
         }
         header img {
@@ -35,9 +43,11 @@
             margin: 40px auto;
             max-width: 800px;
             padding: 20px;
+            background-color: rgba(26, 26, 46, 0.7); /* fond semi-transparent */
+            border-radius: 8px;
         }
         footer {
-            background-color: #1a1a2e;
+            background-color: rgba(26, 26, 46, 0.8);
             color: #cccccc;
             padding: 15px;
             font-size: 0.9em;
@@ -49,11 +59,15 @@
         a:hover {
             text-decoration: underline;
         }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo Zeyroxdn">
+        <img src="logo.png" alt="Logo Zeyroxdn" />
         <h1>Découvrez l'univers digital de Zeyroxdn</h1>
         <p class="slogan">Osez explorer l'imaginaire sans limites.</p>
     </header>
@@ -68,7 +82,7 @@
 
     <section>
         <h2>Nos produits</h2>
-        <ul style="list-style: none; padding: 0;">
+        <ul>
             <li>🤖 Bots Telegram personnalisés</li>
             <li>📖 Romans numériques inédits</li>
             <li>🎨 Images numériques inspirantes</li>
